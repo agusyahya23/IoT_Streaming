@@ -35,6 +35,8 @@ const char blynk_server [] = "blynk.cloud";
 const int blynk_port = 8080;  
 const char* mqtt_server = "34.123.176.43";
 
+const char* sensor_id = "sensor1";
+
 // MicroSD
 #define FILE_BASE_NAME "Data"
 File my_file;
@@ -406,6 +408,7 @@ void sendSensorDataToMQTT( float temperature, float humidity, float pressure) {
   jsonDoc["temperature"] = temperature;
   jsonDoc["humidity"] = humidity;
   jsonDoc["pressure"] = pressure;
+  jsonDoc["sensor_id"] = sensor_id;
 
   // Serialize JSON to a string
   String jsonString;
