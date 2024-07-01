@@ -1,0 +1,12 @@
+kafka-python==2.0.2
+pydantic==1.9.0
+databases==0.6.2
+SQLAlchemy==1.4.33
+python-dotenv==0.19.1
+asyncpg==0.28.0 
+paho-mqtt==1.6.1
+psycopg2-binary
+aiokafka
+aiohttp
+google-api-python-client
+pytz
