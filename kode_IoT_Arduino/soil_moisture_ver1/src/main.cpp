@@ -5,7 +5,6 @@
 #include <SD.h>
 
 #include <PubSubClient.h>
-#include "config.h"
 
 #include <ArduinoHttpClient.h>
 #include <ArduinoJson.h>
